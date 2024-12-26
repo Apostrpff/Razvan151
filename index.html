@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programează-ți ședința</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigație -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">GABI MANICHIURA</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Despre mine</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner cu animație -->
+    <section class="hero">
+        <h1 class="hero-title">Programează-ți ședința perfectă!</h1>
+        <p class="hero-subtitle">Manichiura ta, pasiunea noastră!</p>
+        <a href="#booking-form" class="hero-btn">Rezervă acum</a>
+    </section>
+
+    <!-- Despre mine -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Despre mine</h2>
+            <p>Bun venit! Sunt Gabi, un specialist pasionat în manichiură, dedicat să ofer clienților mei cele mai bune servicii. Cu o experiență vastă și o atenție deosebită la detalii, scopul meu este să-ți fac ziua mai frumoasă printr-o manichiură perfectă.</p>
+            <a href="#gallery" class="gallery-btn">Vezi galeria</a>
+        </div>
+    </section>
+
+    <!-- Formular -->
+    <section class="main-content">
+        <div class="container">
+            <h2>Completează formularul de mai jos</h2>
+
+            <form id="booking-form" action="https://formspree.io/f/xqaaeryp" method="POST">
+                <div class="form-group">
+                    <label for="name">Nume:</label>
+                    <input type="text" id="name" name="name" required placeholder="Introdu numele tău">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Introdu emailul tău">
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment_date">Data:</label>
+                    <input type="date" id="appointment_date" name="appointment_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment_time">Ora:</label>
+                    <input type="time" id="appointment_time" name="appointment_time" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Confirmă programarea</button>
+            </form>
+
+            <div id="success-message" class="hidden">
+                <p>Programarea ta a fost realizată cu succes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>&copy; 2024 GABI MANICHIURA. Toate drepturile rezervate.</p>
+            <p>Email: <a href="mailto:razvansebec63@gmail.com">razvansebec63@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
